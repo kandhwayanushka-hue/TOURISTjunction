@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Train Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: rgb(237, 170, 170)
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 430px;
+            margin: 40px auto;
+            background:white
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+            border-top: 6px solid #f7ada6;
+        }
+
+        h2 {
+            text-align: center;
+            color: #ff6f61;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+            color: #3a0ca3;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 8px;
+            border: 2px solid #9be0c2;
+            background-color: #e8a7c1;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 14px;
+            background : rgb(149, 149, 227) ;
+            color: white;
+            border: none;
+            font-size: 17px;
+            font-weight: bold;
+            border-radius: 30px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2> Train Ticket Booking</h2>
+
+    <form>
+        <label>Passenger Name</label>
+        <input type="text" placeholder="Enter full name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter phone number" required>
+
+        <label>From Station</label>
+        <input type="text" placeholder="Source station" required>
+
+        <label>To Station</label>
+        <input type="text" placeholder="Destination station" required>
+
+        <label>Journey Date</label>
+        <input type="date" required>
+
+        <label>Class</label>
+        <select required>
+            <option value="">Select class</option>
+            <option>Sleeper (SL)</option>
+            <option>AC 3 Tier (3A)</option>
+            <option>AC 2 Tier (2A)</option>
+            <option>First Class (1A)</option>
+        </select>
+
+        <label>Number of Passengers</label>
+        <input type="number" min="1" max="6" required>
+
+        <button type="submit">Book Train Ticket</button>
+    </form>
+</div>
+
+</body>
+</html>
