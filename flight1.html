@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flight Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f6fc;
+        }
+        .container {
+            width: 400px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Flight Booking Form</h2>
+
+    <form>
+        <label>Passenger Name</label>
+        <input type="text" placeholder="Enter full name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter phone number" required>
+
+        <label>From</label>
+        <input type="text" placeholder="Departure city" required>
+
+        <label>To</label>
+        <input type="text" placeholder="Destination city" required>
+
+        <label>Departure Date</label>
+        <input type="date" required>
+
+        <label>Return Date</label>
+        <input type="date">
+
+        <label>Class</label>
+        <select required>
+            <option value="">Select class</option>
+            <option>Economy</option>
+            <option>Business</option>
+            <option>First Class</option>
+        </select>
+
+        <label>Number of Passengers</label>
+        <input type="number" min="1" max="10" required>
+
+        <button type="submit">Book Flight</button>
+    </form>
+</div>
+
+</body>
+</html>
