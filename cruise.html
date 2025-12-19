@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cruise Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: rgb(243, 243, 144);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 440px;
+            margin: 40px auto;
+            background: rgb(247, 210, 142);
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+            border-top: 6px solid #0077b6;
+        }
+
+        h2 {
+            text-align: center;
+            color: #0077b6;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+            color: #023e8a;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 8px;
+            border: 2px solid #90dbf4;
+            background-color: #e0f7ff;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 14px;
+            background: rgb(157, 157, 244)
+            color: white;
+            border: none;
+            font-size: 17px;
+            font-weight: bold;
+            border-radius: 30px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Cruise Booking Form</h2>
+
+    <form>
+        <label>Passenger Name</label>
+        <input type="text" placeholder="Enter full name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter phone number" required>
+
+        <label>Departure Port</label>
+        <input type="text" placeholder="Enter departure port" required>
+
+        <label>Destination Port</label>
+        <input type="text" placeholder="Enter destination port" required>
+
+        <label>Departure Date</label>
+        <input type="date" required>
+
+        <label>Cruise Type</label>
+        <select required>
+            <option value="">Select cruise type</option>
+            <option>Luxury Cruise</option>
+            <option>Family Cruise</option>
+            <option>Adventure Cruise</option>
+            <option>Romantic Cruise</option>
+        </select>
+
+        <label>Cabin Class</label>
+        <select required>
+            <option value="">Select cabin class</option>
+            <option>Interior Cabin</option>
+            <option>Ocean View Cabin</option>
+            <option>Balcony Cabin</option>
+            <option>Suite</option>
+        </select>
+
+        <label>Number of Passengers</label>
+        <input type="number" min="1" max="8" required>
+
+        <button type="submit">Book Cruise</button>
+    </form>
+</div>
+
+</body>
+</html>
