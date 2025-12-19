@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background:rgb(199, 44, 70)
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+            width: 100%;
+            background: rgb(194, 65, 65)
+            padding: 22px;
+            color: white;
+            font-size: 26px;
+            letter-spacing: 1px;
+            font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            padding: 30px;
+        }
+
+        .restaurant-box {
+            background: rgb(30, 132, 141)
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 22px rgba(0,0,0,0.25);
+        }
+
+        img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 14px;
+        }
+
+        h2 {
+            margin-top: 12px;
+            color: #6c49dd;
+        }
+
+        .cuisine {
+            color: #bb3453;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .rating {
+            color: #efa60b;
+            font-size: 18px;
+            margin: 8px 0;
+        }
+
+        .description {
+            margin-top: 10px;
+            color: #d91010;
+            font-family: 'Gill Sans', Calibri, sans-serif;
+        }
+
+        .btn {
+            display: inline-block;
+            background: rgb(22, 104, 236)
+            color: white;
+            padding: 10px 24px;
+            margin: 12px 6px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        @media (max-width: 1024px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    DISCOVER THE BEST RESTAURANTS 
+</header>
+
+<div class="grid">
+
+    <div class="restaurant-box">
+        <img src="https://curlytales.com/wp-content/uploads/2022/07/Untitled-design-2022-07-25T111309.161.jpg">
+        <h2>Spice Garden</h2>
+        <p class="cuisine">Indian • North & South</p>
+        <p class="rating">2 STAR</p>
+        <p class="description">Authentic flavors with a modern touch.</p>
+        <a href="menu.html" class="btn">View Menu</a>
+    </div>
+
+    <div class="restaurant-box">
+        <img src="https://tourismquest.com/wp-content/uploads/2024/02/6-Must-Try-Restaurants.jpg">
+        <h2>La Bella Italia</h2>
+        <p class="cuisine">Italian • Continental</p>
+        <p class="rating">3 STAR</p>
+        <p class="description">Fresh pasta, wood-fired pizzas & fine wine.</p>
+        <a href="https://www.bing.com/images/search?view=detailV2&ccid=oUHlqJSB&id=06CFA6219F5868B9A755F4B862D5EE77A2C1B533&thid=OIP.oUHlqJSBXwlo7Qq7X6xeFwHaLc&mediaurl=https%3a%2f%2fmarketplace.canva.com%2fEAFwRADHMsM%2f1%2f0%2f1035w%2fcanva-orange-and-black-bold-geometric-restaurant-menu-AX4bhelWqNA.jpg&exph=1600&expw=1035&q=menu+image&FORM=IRPRST&ck=1219387B9AC16723F68C4C5CEF0E8B3D&selectedIndex=3&itb=0" class="btn">View Menu</a>
+    </div>
+
+    <div class="restaurant-box">
+        <img src="https://lh6.googleusercontent.com/_ZJsE5NLPuThiUMZJJ6J4PDnYohw9Zz-nX5IQIvWLKo_g4nOuwo46U-G8vo_TcdTiyFNf1HYEg39_XTZh3w8Mf-MDy3_hznVKqkRcVd8eKBHLi3CEs5dis1DnXoc_EkJHmhseeZ4">
+        <h2>Ocean Breeze</h2>
+        <p class="cuisine">Seafood • Asian</p>
+        <p class="rating">4 STAR</p>
+        <p class="description">Coastal cuisine with a sea-view dining experience.</p>
+        <a href="menu.html" class="btn">View Menu</a>
+    </div>
+
+</div>
+
+</body>
+</html>
